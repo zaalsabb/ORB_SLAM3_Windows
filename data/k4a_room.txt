@@ -1,0 +1,66 @@
+ORB-SLAM3 rgbd_tum Vocabulary/ORBvoc.txt K4A.yaml data\frames data\frames/associated.txt
+
+ORB-SLAM3 Copyright (C) 2017-2020 Carlos Campos, Richard Elvira, Juan J. Gómez, José M.M. Montiel and Juan D. Tardós, University of Zaragoza.
+ORB-SLAM2 Copyright (C) 2014-2016 Raúl Mur-Artal, José M.M. Montiel and Juan D. Tardós, University of Zaragoza.
+This program comes with ABSOLUTELY NO WARRANTY;
+This is free software, and you are welcome to redistribute it
+under certain conditions. See LICENSE.txt.
+
+Input sensor was set to: RGB-D
+
+Loading ORB Vocabulary. This could take a while...
+Vocabulary loaded!
+
+Creation of new map with id: 0
+Creation of new map with last KF id: 0
+Seq. Name: 
+
+Camera Parameters: 
+- fx: 909.042
+- fy: 908.926
+- cx: 960.79
+- cy: 552.4
+- bf: 40
+- k1: 0
+- k2: 0
+- p1: 0
+- p2: 0
+- fps: 30
+- color order: RGB (ignored if grayscale)
+
+ORB Extractor Parameters: 
+- Number of Features: 1000
+- Scale Levels: 8
+- Scale Factor: 1.2
+- Initial Fast Threshold: 20
+- Minimum Fast Threshold: 7
+
+Depth Threshold (Close/Far Points): 1.76009
+
+-------
+Start processing sequence ...
+Images in the sequence: 1959
+
+First KF:0; Map init KF:0
+New Map created with 701 points
+Fail to track local map!
+LM: Active map reset recieved
+LM: Active map reset, waiting...
+LM: Reseting current map in Local Mapping...
+LM: End reseting Local Mapping...
+LM: Reset free the mutex
+LM: Active map reset, Done!!!
+mnFirstFrameId = 0
+mnInitialFrameId = 0
+3 Frames set to lost
+First KF:3; Map init KF:0
+New Map created with 649 points
+mpLocalMapper is not finished
+-------
+
+median tracking time: 0.0584252
+mean tracking time: 0.059229
+
+Saving camera trajectory to log/CameraTrajectory.txt ...
+
+Saving keyframe trajectory to log/KeyFrameTrajectory.txt ...

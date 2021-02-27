@@ -12,6 +12,7 @@ import sys
 from pyk4a import PyK4APlayback
 import cv2
 import numpy as np
+import yaml
 
 pwd = os.path.dirname(os.path.realpath(__file__))
 sys.path.append(os.path.join(pwd, '..'))
@@ -81,9 +82,31 @@ class ReaderWithCallback:
                     
             dist = np.array(dist,dtype=np.float32)
             newcamtx, roi = cv2.getOptimalNewCameraMatrix(camtx, dist, (w,h), 1, (w,h))
-            # calib['intrinsic_matrix'] = list(newcamtx.T.reshape((-1)) )
+            calib['intrinsic_matrix'] = list(newcamtx.T.reshape((-1)) )
             with open('{}/intrinsic.json'.format(abspath), 'w') as f:
                 json.dump(calib,f)
+
+            orb_yaml=[]
+            with open(os.path.abspath('.\K4A.yaml')) as f:
+                for line in f:
+                    orb_yaml.append(line)
+
+            for i,line in enumerate(orb_yaml):
+                if 'Camera.fx' in line:
+                    orb_yaml[i] = 'Camera.fx: {}\n'.format(newcamtx[0,0])
+                if 'Camera.fy' in line:
+                    orb_yaml[i] = 'Camera.fy: {}\n'.format(newcamtx[1,1])
+                if 'Camera.cx' in line:
+                    orb_yaml[i] = 'Camera.cx: {}\n'.format(newcamtx[0,2])
+                if 'Camera.cy' in line:
+                    orb_yaml[i] = 'Camera.cy: {}\n'.format(newcamtx[1,2])
+                if 'Camera.height' in line:
+                    orb_yaml[i] = 'Camera.height: {}\n'.format(h)
+                if 'Camera.width' in line:
+                    orb_yaml[i] = 'Camera.width: {}\n'.format(w)            
+
+            with open(os.path.abspath('K4A.yaml'), "w") as f:
+                f.writelines(orb_yaml)       
 
             config = {
                 'path_dataset': abspath,

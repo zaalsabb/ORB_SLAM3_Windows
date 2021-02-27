@@ -16,16 +16,16 @@ Creation of new map with last KF id: 0
 Seq. Name: 
 
 Camera Parameters: 
-- fx: 909.042
-- fy: 908.926
-- cx: 960.79
-- cy: 552.4
+- fx: 997.826
+- fy: 997.639
+- cx: 1024.38
+- cy: 780.838
 - bf: 40
 - k1: 0
 - k2: 0
 - p1: 0
 - p2: 0
-- fps: 30
+- fps: 15
 - color order: RGB (ignored if grayscale)
 
 ORB Extractor Parameters: 
@@ -35,14 +35,31 @@ ORB Extractor Parameters:
 - Initial Fast Threshold: 20
 - Minimum Fast Threshold: 7
 
-Depth Threshold (Close/Far Points): 1.76009
+Depth Threshold (Close/Far Points): 1.60349
 
 -------
 Start processing sequence ...
-Images in the sequence: 1959
+Images in the sequence: 1187
 
 First KF:0; Map init KF:0
-New Map created with 701 points
+New Map created with 969 points
+KF in map: 46
+Fail to track local map!
+Fail to track local map!
+Creation of new map with id: 1
+Exits current map 
+Saved map with ID: 0
+Creation of new map with last KF id: 46
+First KF:46; Map init KF:46
+New Map created with 904 points
+BoW: 148 matches between 798 points with coarse Sim3
+Fail to track local map!
+Creation of new map with id: 2
+Exits current map 
+Saved map with ID: 1
+Creation of new map with last KF id: 103
+First KF:103; Map init KF:103
+New Map created with 870 points
 Fail to track local map!
 LM: Active map reset recieved
 LM: Active map reset, waiting...
@@ -51,15 +68,224 @@ LM: End reseting Local Mapping...
 LM: Reset free the mutex
 LM: Active map reset, Done!!!
 mnFirstFrameId = 0
-mnInitialFrameId = 0
-3 Frames set to lost
-First KF:3; Map init KF:0
-New Map created with 649 points
-mpLocalMapper is not finished
+mnInitialFrameId = 368
+1 Frames set to lost
+First KF:106; Map init KF:103
+New Map created with 788 points
+BoW: 155 matches between 807 points with coarse Sim3
+BoW: Current KF 117; candidate KF 41
+BoW: There are 82 matches between them with the optimized Sim3
+BoW: KF 41 to KF 116 is separated by 0.0172618 meters
+BoW: Rotation between KF -> [0.99849606, -0.025916507, 0.048312455;
+ 0.025972806, 0.99966246, -0.00053778291;
+ -0.048282325, 0.0017917864, 0.99883211]
+BoW: Rotation in angles (x, y, z) -> (0.102785, 2.76753, 1.49008)
+BoW: KF 41 to KF 115 is separated by 0.025718 meters
+BoW: Rotation between KF -> [0.99608594, -0.036874134, 0.080331117;
+ 0.037466366, 0.99928063, -0.0058771372;
+ -0.080056667, 0.0088638552, 0.99675089]
+BoW: Rotation in angles (x, y, z) -> (0.509519, 4.59196, 2.15415)
+BoW: KF 41 to KF 113 is separated by 0.0420081 meters
+BoW: Rotation between KF -> [0.98625839, -0.025874652, 0.16317138;
+ 0.025930686, 0.99966216, 0.0017867722;
+ -0.16316256, 0.002468925, 0.98659611]
+BoW: Rotation in angles (x, y, z) -> (0.143385, 9.39079, 1.50612)
+*Merged detected
+Local Mapping STOP
+Chage to map with id: 0
+FUSE: Initially there are 3016 MPs
+FUSE: Intially there are 12 KFs
+FUSE: 805 MPs had been fused
+Local Mapping RELEASE
+Local Mapping RELEASE
+KF in map: 61
+Fail to track local map!
+Fail to track local map!
+Creation of new map with id: 3
+Exits current map 
+Saved map with ID: 2
+Creation of new map with last KF id: 121
+First KF:121; Map init KF:121
+New Map created with 769 points
+Fail to track local map!
+Creation of new map with id: 4
+Exits current map 
+Saved map with ID: 3
+Creation of new map with last KF id: 147
+First KF:147; Map init KF:147
+New Map created with 654 points
+Fail to track local map!
+Creation of new map with id: 5
+Exits current map 
+Saved map with ID: 4
+Creation of new map with last KF id: 168
+First KF:168; Map init KF:168
+New Map created with 939 points
+Fail to track local map!
+LM: Active map reset recieved
+LM: Active map reset, waiting...
+LM: Reseting current map in Local Mapping...
+LM: End reseting Local Mapping...
+LM: Reset free the mutex
+LM: Active map reset, Done!!!
+mnFirstFrameId = 0
+mnInitialFrameId = 603
+0 Frames set to lost
+First KF:170; Map init KF:168
+New Map created with 772 points
+Fail to track local map!
+LM: Active map reset recieved
+LM: Active map reset, waiting...
+LM: Reseting current map in Local Mapping...
+LM: End reseting Local Mapping...
+LM: Reset free the mutex
+LM: Active map reset, Done!!!
+mnFirstFrameId = 0
+mnInitialFrameId = 605
+0 Frames set to lost
+First KF:173; Map init KF:170
+New Map created with 518 points
+Fail to track local map!
+LM: Active map reset recieved
+LM: Active map reset, waiting...
+LM: Reseting current map in Local Mapping...
+LM: End reseting Local Mapping...
+LM: Reset free the mutex
+LM: Active map reset, Done!!!
+mnFirstFrameId = 0
+mnInitialFrameId = 609
+0 Frames set to lost
+First KF:177; Map init KF:173
+New Map created with 659 points
+Fail to track local map!
+LM: Active map reset recieved
+LM: Active map reset, waiting...
+LM: Reseting current map in Local Mapping...
+LM: End reseting Local Mapping...
+LM: Reset free the mutex
+LM: Active map reset, Done!!!
+mnFirstFrameId = 0
+mnInitialFrameId = 614
+0 Frames set to lost
+First KF:179; Map init KF:177
+New Map created with 623 points
+KF in map: 64
+Fail to track local map!
+Fail to track local map!
+Creation of new map with id: 6
+Exits current map 
+Saved map with ID: 5
+Creation of new map with last KF id: 243
+First KF:243; Map init KF:243
+New Map created with 549 points
+Fail to track local map!
+LM: Active map reset recieved
+LM: Active map reset, waiting...
+LM: Reseting current map in Local Mapping...
+LM: End reseting Local Mapping...
+LM: Reset free the mutex
+LM: Active map reset, Done!!!
+mnFirstFrameId = 0
+mnInitialFrameId = 724
+0 Frames set to lost
+First KF:248; Map init KF:243
+New Map created with 631 points
+Fail to track local map!
+LM: Active map reset recieved
+LM: Active map reset, waiting...
+LM: Reseting current map in Local Mapping...
+LM: End reseting Local Mapping...
+LM: Reset free the mutex
+LM: Active map reset, Done!!!
+mnFirstFrameId = 0
+mnInitialFrameId = 729
+0 Frames set to lost
+First KF:249; Map init KF:248
+New Map created with 739 points
+BoW: 170 matches between 711 points with coarse Sim3
+BoW: 104 matches between 651 points with coarse Sim3
+KF in map: 20
+Fail to track local map!
+Fail to track local map!
+Creation of new map with id: 7
+Exits current map 
+Saved map with ID: 6
+Creation of new map with last KF id: 269
+First KF:269; Map init KF:269
+New Map created with 782 points
+Fail to track local map!
+LM: Active map reset recieved
+LM: Active map reset, waiting...
+LM: Reseting current map in Local Mapping...
+LM: End reseting Local Mapping...
+LM: Reset free the mutex
+LM: Active map reset, Done!!!
+mnFirstFrameId = 0
+mnInitialFrameId = 771
+0 Frames set to lost
+First KF:272; Map init KF:269
+New Map created with 731 points
+BoW: 144 matches between 577 points with coarse Sim3
+BoW: 135 matches between 651 points with coarse Sim3
+BoW: Current KF 364; candidate KF 202
+BoW: There are 83 matches between them with the optimized Sim3
+BoW: KF 202 to KF 363 is separated by 0.0123923 meters
+BoW: Rotation between KF -> [0.9996838, 0.011144571, -0.022541583;
+ -0.011160545, 0.99993759, -0.00058303773;
+ 0.022533625, 0.0008344315, 0.99974573]
+BoW: Rotation in angles (x, y, z) -> (0.047823, -1.29123, -0.639647)
+BoW: KF 202 to KF 365 is separated by 0.0237837 meters
+BoW: Rotation between KF -> [0.99927539, -0.021343295, 0.031514615;
+ 0.02132711, 0.99977225, 0.00084962696;
+ -0.031525522, -0.00017689168, 0.9995029]
+BoW: Rotation in angles (x, y, z) -> (-0.0101405, 1.80663, 1.22269)
+BoW: KF 202 to KF 362 is separated by 0.0251249 meters
+BoW: Rotation between KF -> [0.99870521, 0.015130759, -0.048570871;
+ -0.015568841, 0.99984139, -0.008653786;
+ 0.048432171, 0.0093987584, 0.99878222]
+BoW: Rotation in angles (x, y, z) -> (0.539166, -2.77613, -0.893139)
+*Merged detected
+Local Mapping STOP
+Chage to map with id: 5
+FUSE: Initially there are 2176 MPs
+FUSE: Intially there are 93 KFs
+FUSE: 664 MPs had been fused
+Local Mapping RELEASE
+Local Mapping STOP
+Local Mapping RELEASE
+BoW: 160 matches between 694 points with coarse Sim3
+BoW: 178 matches between 694 points with coarse Sim3
+BoW: 177 matches between 663 points with coarse Sim3
+BoW: Current KF 386; candidate KF 118
+BoW: There are 105 matches between them with the optimized Sim3
+BoW: KF 118 to KF 384 is separated by 0.0291671 meters
+BoW: Rotation between KF -> [0.99492073, 0.0053960234, -0.10051686;
+ -0.0078273267, 0.99968594, -0.023809344;
+ 0.10035685, 0.024475202, 0.99465048]
+BoW: Rotation in angles (x, y, z) -> (1.40962, -5.75989, -0.450766)
+BoW: KF 118 to KF 385 is separated by 0.0181256 meters
+BoW: Rotation between KF -> [0.99828261, -0.0010602251, -0.058572292;
+ 0.0003541708, 0.99992716, -0.012063324;
+ 0.058580816, 0.012021869, 0.99821031]
+BoW: Rotation in angles (x, y, z) -> (0.690024, -3.35846, 0.020328)
+BoW: KF 118 to KF 381 is separated by 0.0782084 meters
+BoW: Rotation between KF -> [0.97412884, 0.010316417, -0.22575748;
+ -0.016328022, 0.99955964, -0.024777576;
+ 0.22540241, 0.02782274, 0.97386837]
+BoW: Rotation in angles (x, y, z) -> (1.6365, -13.0269, -0.960311)
+*Merged detected
+Local Mapping STOP
+Chage to map with id: 2
+FUSE: Initially there are 2614 MPs
+FUSE: Intially there are 87 KFs
+FUSE: 416 MPs had been fused
+Local Mapping RELEASE
+Local Mapping STOP
+Local Mapping RELEASE
 -------
 
-median tracking time: 0.0584252
-mean tracking time: 0.059229
+median tracking time: 0.0793924
+mean tracking time: 0.0806126
 
 Saving camera trajectory to log/CameraTrajectory.txt ...
 

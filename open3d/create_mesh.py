@@ -69,8 +69,8 @@ def make_pointcloud_for_fragment(path_dataset, color_files, depth_files,
 
 if __name__ == "__main__":
 
-    path_dataset = r'C:\Users\Zaid\Documents\Azure Kinect\ORB_SLAM3_Windows\data\frames'
-    config_path = r'C:\Users\Zaid\Documents\Azure Kinect\ORB_SLAM3_Windows\open3d\config.json'
+    path_dataset = r'data\frames'
+    config_path = r'open3d\config.json'
 
     associated = np.loadtxt(join(path_dataset,'associated.txt'),dtype=str,delimiter=' ')
     seq = np.array(associated[:,0],dtype=float)
@@ -87,7 +87,7 @@ if __name__ == "__main__":
     intrinsic.width  = calib['width']
     # seq = seq[::int(config["skip_frames"])]
 
-    pose_graph = np.loadtxt(join(path_dataset,'KeyFrameTrajectory.txt'))
+    pose_graph = np.loadtxt('log\KeyFrameTrajectory.txt')
     color_files = [join(path_dataset,associated[i,1]) for i in range(associated.shape[0])]
     depth_files = [join(path_dataset,associated[i,3]) for i in range(associated.shape[0])]
 

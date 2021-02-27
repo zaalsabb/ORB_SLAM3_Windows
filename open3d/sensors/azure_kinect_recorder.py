@@ -3,7 +3,7 @@
 # See license file or visit www.open3d.org for details
 
 # examples/python/reconstruction_system/sensors/azure_kinect_recorder.py
-
+import os
 import argparse
 import datetime
 import open3d as o3d
@@ -85,8 +85,8 @@ class RecorderWithCallback:
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Azure kinect mkv recorder.')
-    parser.add_argument('--config', type=str, help='input json kinect config',default='default_config.json')
-    parser.add_argument('--output', type=str, help='output mkv filename')
+    parser.add_argument('--config', type=str, help='input json kinect config')
+    parser.add_argument('--output', type=str, help='output directory')
     parser.add_argument('--list',
                         action='store_true',
                         help='list available azure kinect sensors')
@@ -109,9 +109,11 @@ if __name__ == '__main__':
         config = o3d.io.read_azure_kinect_sensor_config(args.config)
     else:
         config = o3d.io.AzureKinectSensorConfig()
+        print('Azure Kinect Config File Not Found: Using Default Values...')
 
     if args.output is not None:
-        filename = args.output
+        filename = os.path.join(args.output, '{date:%Y-%m-%d-%H-%M-%S}.mkv'.format(
+            date=datetime.datetime.now()))
     else:
         filename = '{date:%Y-%m-%d-%H-%M-%S}.mkv'.format(
             date=datetime.datetime.now())
